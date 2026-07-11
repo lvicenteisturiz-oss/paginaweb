@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{%block contenido%}
+<div class="tarjeta-gato">
+        <div class="contenedor-imagen">
+            <img src="https://via.placeholder.com/320x200" alt="Espacio para foto de la raza" class="imagen-gato">
+            <span class="badge-categoria">Categoría / Grupo</span>
+        </div>
+      {% for gato in  datos %}  
+        <div class="contenido">
+            <h2 class="nombre-raza">{{gato.nombre}}</h2>
+            <img src = "{{gato.imagen}}" >
+        </div>
+        {%endfor %}
+{%endblock%}

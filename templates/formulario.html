@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+{%block contenido%}
+<section id="contacto" class="form-section">
+        <div class="form-container">
+            <h2>Agenda una Cita</h2>
+            <p>Déjanos tus datos y nos pondremos en contacto contigo para confirmar la hora de tu visita.</p>
+            
+            <form action="/enviar" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre del Dueño</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mascota">Nombre de la Mascota</label>
+                    <input type="text" id="mascota" name="mascota" placeholder="Ej. Toby" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="edad">Motivo de la consulta</label>
+                    <input type="edad" id="edad" name="edad" placeholder="ingresa tu edad" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Solicitud</button>
+            </form>
+        </div>
+    </section>
+{%endblock%}

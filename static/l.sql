@@ -1,0 +1,1 @@
+INSERT INTO animales (nombre, correo, edad) VALUES ('Jonas Fronteras', 'jonasfronterase@gmail.com', 32)

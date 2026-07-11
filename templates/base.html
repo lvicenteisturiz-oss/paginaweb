@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetSalud - Clínica Veterinaria</title>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/estilo.css')}}">
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">Vet<span>Salud</span></a>
+            <nav class="nav-menu">
+                <a href="/inicio">Inicio</a>
+                <a href="/servicios">Servicios</a>
+                <a href="/formulario">Contacto</a>
+                <a href="/solicitudes">Solicitud</a>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main>
+        {%block contenido%}
+        {%endblock%} 
+    </main>
+
+    
+    <footer class="footer">
+        <p>&copy; 2026 VetSalud Veterinaria. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
