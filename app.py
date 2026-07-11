@@ -1,6 +1,6 @@
 import requests 
 import sqlite3
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 
 app = Flask(__name__)
 app.secret_key = 'winter25'
