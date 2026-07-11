@@ -56,7 +56,7 @@ def soporte_de_la_pagina():
             nombre TEXT NOT NULL,
             correo TEXT NOT NULL,
             mascota TEXT NOT NULL,
-            edad REAL NOT NULL,
+            edad REAL NOT NULL
         )
     """)
     
